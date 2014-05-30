@@ -45,7 +45,7 @@ var recalculate = function() {
   var winning = 100*(1-notwinning);
 
   var showodds = document.getElementById('finalodds');
-  showodds.innerHTML = 'Odds of Winning a bracelet: ' + winning.toFixed(2) + '%';
+  showodds.innerHTML = 'Odds of Negreanu or Ivey Winning a Bracelet: ' + winning.toFixed(2) + '%';
 
 };
 
