@@ -25,7 +25,11 @@ a {
 }
 
 .event {
-  padding-top: 20px;
+  padding: 10px;
+  border: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-style: dotted;
 }
 
 #footer {
