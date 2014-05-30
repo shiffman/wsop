@@ -70,16 +70,16 @@ var winningProb = function(i) {
   return prob/100;
 };
 
-window.onload = function() {
-  
+var loadData = function() {
+
   var eventsElem = document.getElementById('events');
   for (var i = 0; i < wsop.length; i++) {
-    console.log(wsop[i]);
+    //console.log(wsop[i]);
     var eventElem = document.createElement('div');
     eventElem.setAttribute('class','event');
 
     var eventCheck = document.createElement('input');
-    eventCheck.type = 'checkbox'
+    eventCheck.type = 'checkbox';
     eventCheck.setAttribute('class','eventcheck');
     eventCheck.setAttribute('id',wsop[i].id);
     eventCheck.checked = wsop[i].playing;
@@ -155,15 +155,10 @@ window.onload = function() {
     eventElem.appendChild(field);
     eventElem.appendChild(skill);
     eventElem.appendChild(odds);
-
-
-
   }
+};
 
-
- 
+window.onload = function() {
+  loadData();
   recalculate();
-
-
-
 };
