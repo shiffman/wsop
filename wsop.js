@@ -65,21 +65,27 @@ var winningProb = function(i) {
 };
 
 window.onload = function() {
+  
+  var eventsElem = document.getElementById('events');
+  for (var i = 0; i < wsop.length; i++) {
+    console.log(wsop[i]);
+    var eventElem = document.createElement('div');
+    eventElem.setAttribute('class','event');
 
+    var eventCheck = document.createElement('input');
+    eventCheck.type = 'checkbox'
+    eventCheck.setAttribute('class','eventcheck');
+    eventCheck.setAttribute('id',wsop[i].id);
+    eventCheck.checked = wsop[i].playing;
+    eventCheck.setAttribute('onclick','recalculate()');
+    eventElem.appendChild(eventCheck);
+    eventsElem.appendChild(eventElem);
 
-  // Check all the events
-  var checkers = document.getElementsByClassName('eventcheck');
-  for (var i = 0; i < checkers.length; i++) {
-    checkers[i].checked = true;
-    checkers[i].setAttribute('onclick','recalculate()');
-  }
+    var eventName = document.createElement('div');
+    eventName.innerHTML = wsop[i].name;
+    eventName.style.display = 'inline';
+    eventElem.appendChild(eventName);
 
-  var events = document.getElementsByClassName('event');
-
-  var total = 1000;
-
-  for (i = 0; i < events.length; i++) {
-    
     // TOTAL PLAYERS
     var field = document.createElement('div');
 
@@ -88,7 +94,7 @@ window.onload = function() {
     range.setAttribute('id','playersrange'+i);
     range.min = 50;
     range.max = 10000;
-    range.setAttribute('value',total);
+    range.setAttribute('value',wsop[i].entrants);
     range.setAttribute('oninput','adjust(this.value,'+i+')');
     field.appendChild(range);
 
@@ -97,7 +103,7 @@ window.onload = function() {
     players.type = 'text';
     players.size = 4;
     players.setAttribute('id','players' + i);
-    players.setAttribute('value',total);
+    players.setAttribute('value',wsop[i].entrants);
     players.setAttribute('oninput','changeRange(this.value,'+i+')');
 
     field.appendChild(players);
@@ -112,7 +118,7 @@ window.onload = function() {
     skillrange.setAttribute('id','skillrange'+i);
     skillrange.min = 1;
     skillrange.max = 1000;
-    skillrange.setAttribute('value',100);
+    skillrange.setAttribute('value',wsop[i].edge*100);
 
     skillrange.setAttribute('oninput','adjustSkill(this.value,'+i+')');
     skill.appendChild(skillrange);
@@ -122,7 +128,7 @@ window.onload = function() {
     skilltxt.type = 'text';
     skilltxt.size = 4;
     skilltxt.setAttribute('id','skill' + i);
-    skilltxt.setAttribute('value',1);
+    skilltxt.setAttribute('value',wsop[i].edge);
     skilltxt.setAttribute('oninput','changeRangeSkill(this.value,'+i+')');
 
     skill.appendChild(skilltxt);
@@ -135,18 +141,21 @@ window.onload = function() {
     var odds = document.createElement('div');
     odds.setAttribute('class','odds');
     odds.setAttribute('id','odds' + i);
-    var prob = 100*(1/total);
+    var prob = 100*(1/wsop[i].entrants);
     odds.innerHTML = prob.toFixed(3) + '% chance of winning.';
 
 
     //field.innerHTML += '<input min="50" max="10000" type="range" oninput="adjust(this.value,' + i + ')")></input>';
-    events[i].appendChild(field);
-    events[i].appendChild(skill);
-    events[i].appendChild(odds);
+    eventElem.appendChild(field);
+    eventElem.appendChild(skill);
+    eventElem.appendChild(odds);
+
 
 
   }
 
+
+ 
   recalculate();
 
 
