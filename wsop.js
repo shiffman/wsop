@@ -39,6 +39,9 @@ var recalculate = function() {
       var prob = winningProb(i);
       notwinning *= (1-prob);
       notwinning *= (1-prob);
+      events[i].style.opacity = 1.0;
+    } else {
+      events[i].style.opacity = 0.2;
     }
   }
 
