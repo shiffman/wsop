@@ -1,7 +1,7 @@
 body {
   padding-left: 150px;
   padding-right: 150px;
-  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin-top: 220px;
 }
 
@@ -54,7 +54,7 @@ a {
   margin-top: 10px;
   margin-bottom: 10px;
   border-style: dotted;
-  width: 400px;
+  width: 500px;
 }
 
 #footer {
