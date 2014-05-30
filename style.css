@@ -1,18 +1,42 @@
 body {
-  padding-top: 50px;
-  padding-bottom: 50px;
   padding-left: 150px;
   padding-right: 150px;
   font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin-top: 220px;
 }
 
 h1 {
-  font-size: 36pt;
+  font-size: 32pt;
+  position: fixed;
+  top: 10px;
+  z-index: 10000;
+
 }
 
 h2 {
-  font-size: 24pt;
+  font-size: 20pt;
+  position: fixed;
+  top: 80px;
+  z-index: 10000;
 }
+
+#topper {
+  width: 300%;
+  background: #CCC;
+  z-index: 9999;
+  height: 180px;
+  padding-left: 0px;
+  margin-left: -250px;
+  position: fixed;
+  top: 0px;
+  border-bottom: 1px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+
+}
+
 
 #thisisit {
   display: inline;
