@@ -45,7 +45,7 @@ var recalculate = function() {
   var winning = 100*(1-notwinning);
 
   var showodds = document.getElementById('finalodds');
-  showodds.innerHTML = 'Odds of Negreanu or Ivey Winning a Bracelet: ' + winning.toFixed(2) + '%';
+  showodds.innerHTML = 'Odds of Negreanu or Ivey Winning a Bracelet: <div id="thisisit">' + winning.toFixed(2) + '%</div>';
 
 };
 
@@ -57,7 +57,7 @@ var winningProb = function(i) {
   var players = Number(field.value);
   var edge = Number(skill.value);
   var prob = 100*((1*edge)/(players+(edge-1)));
-  odds.innerHTML = prob.toFixed(3) + '% chance of winning.';
+  odds.innerHTML = prob.toFixed(3) + '% chance of winning this event.';
   return prob/100;
 };
 
@@ -124,7 +124,7 @@ window.onload = function() {
 
     skill.appendChild(skilltxt);
 
-    skill.innerHTML += ' relative skill level ';
+    skill.innerHTML += ' relative skill edge ';
     
 
 

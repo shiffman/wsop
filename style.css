@@ -6,6 +6,20 @@ body {
   font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+h1 {
+  font-size: 36pt;
+}
+
+h2 {
+  font-size: 24pt;
+}
+
+#thisisit {
+  display: inline;
+  padding: 10px;
+  background-color: #FF00B7;
+}
+
 a {
   color: #00B7FF;
 }
