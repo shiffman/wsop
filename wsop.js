@@ -34,21 +34,27 @@ var recalculate = function() {
 
   var checkers = document.getElementsByClassName('eventcheck');
   var events = document.getElementsByClassName('event');
+
+  var totalEvents = 0;
   for (i = 0; i < events.length; i++) {
     if (checkers[i].checked) {
       var prob = winningProb(i);
       notwinning *= (1-prob);
       notwinning *= (1-prob);
       events[i].style.opacity = 1.0;
+      totalEvents++;
     } else {
       events[i].style.opacity = 0.2;
     }
   }
 
+
+
+
   var winning = 100*(1-notwinning);
 
   var showodds = document.getElementById('finalodds');
-  showodds.innerHTML = 'Odds of Negreanu or Ivey Winning a Bracelet: <div id="thisisit">' + winning.toFixed(2) + '%</div>';
+  showodds.innerHTML = 'Odds of Negreanu or Ivey Winning a Bracelet: <div id="thisisit">' + winning.toFixed(2) + '%</div> (Playing ' + totalEvents + ' events.)';
 
 };
 

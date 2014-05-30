@@ -321,7 +321,7 @@ var wsop =
     name:'E46: The Poker Players Championship $50,000  ',
     entrants: 100,
     playing: true,
-    edge: 3.0
+    edge: 2.0
   },
   {
     id:47,
