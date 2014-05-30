@@ -1,0 +1,102 @@
+<head>
+  <script language="javascript" type="text/javascript" src="wsop.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+<h1>WSOP Prop Bet Calculator</h1>
+
+
+<h2 id="finalodds">Odds of Negreanu or Ivey Winning a bracelet: </h2>
+
+<p>Is this a good bet?</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>Less than a week left to bet against Me or Ivey winning a bracelet this summer in Vegas at even money, $5k min Email pattylandis@hotmail.com</p>&mdash; Daniel Negreanu (@RealKidPoker) <a href="https://twitter.com/RealKidPoker/statuses/469298910927028224">May 22, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>
+
+<p>I've been wondering, wondering about this and built a little calculator to help me work it out.</p>
+
+<p>Following should calculate the odds of a <strong>TWO</strong> players <strong>NOT</strong> winning a single bracelet.  Check all events that both players will play.  Set an estimated number of entrants.  Set the relative skill edge to the field ((1.0 is average player, 2.0 is twice the likelyhood of winning as all other entrants, etc.)</p>
+
+<p>
+Source for this calculator is on <a href="https://github.com/shiffman/wsop">github</a>.  There are a ton of missing features and probably errors and major problems with this, <a href="https://github.com/shiffman/wsop/issues">please file them</a>.
+</p>
+
+<p>
+<a href="https://twitter.com/shiffman">@shiffman</a>
+</p>
+
+
+<div id ="events">
+<div class="event"><input type="checkbox" class="eventcheck" id = "1">Event #1: Casino Employees No-Limit Hold'em Event $500</input><br/></div>
+<div class="event"><input type="checkbox" class="eventcheck" id = "2">Event #2: Mixed Max No-Limit Hold'em $25,000</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "3">Event #3: Pot-Limit Omaha $1,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "4">Event #4: No-Limit Hold'em $1,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "5">Event #5: Limit 2-7 Triple Draw Lowball $10,000</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "6">Event #6: No-Limit Hold'em Shootout $1,500</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "7">Event #7: Seven Card Razz $1,500</input><br/></div>   
+<div class="event"><input type="checkbox" class="eventcheck" id = "8">Event #8: Millionaire Maker No-Limit Hold'em $1,500</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "9">Event #9: No-Limit Hold'em $1,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "10">Event #10: Limit Omaha Hi-Low Split-8 or Better $10,000</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "11">Event #11: No-Limit Hold'em Six Handed $1,500</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "12">Event #12: Pot-Limit Hold'em $1,500 </input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "13">Event #13: No-Limit 2-7 Draw Lowball $10,000</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "14">Event #14: Limit Omaha Hi-Low Split-8 or Better $1,500</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "15">Event #15: No-Limit Hold'em Six Handed $3,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "16">Event #16: Limit 2-7 Triple Draw Lowball $1,500</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "17">Event #17: Seniors No-Limit Hold'em Championship $1,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "18">Event #18: Seven Card Razz $10,000</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "19">Event #19: No-Limit Hold'em $1,500</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "20">Event #20: No-Limit Hold'em Shootout $3,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "21">Event #21: No-Limit Hold'em $1,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "22">Event #22: H.O.R.S.E. $10,000</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "23">Event #23: Turbo No-Limit Hold'em  $1,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "24">E24: No-Limit Hold'em Six Handed $5,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "25">E25: Omaha/Seven Card Stud Hi-Low Split-8 or Better $2,500</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "26">E26: No-Limit Hold'em $1,500</input><br/></div>   
+<div class="event"><input type="checkbox" class="eventcheck" id = "27">E27: H.O.R.S.E. $1,500</input><br/></div>   
+<div class="event"><input type="checkbox" class="eventcheck" id = "28">E28: Pot-Limit Hold'em $10,000</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "29">E29: No-Limit Hold'em $2,500</input><br/></div>   
+<div class="event"><input type="checkbox" class="eventcheck" id = "30">E30: Seven Card Stud Hi-Low 8-or Better $1,500</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "31">E31: No-Limit Hold'em $1,500</input><br/></div>   
+<div class="event"><input type="checkbox" class="eventcheck" id = "32">E32: No-Limit Hold'em Six Handed $10,000</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "33">E33: No-Limit Hold'em $1,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "34">E34: Seven Card Stud $1,500</input><br/></div>   
+<div class="event"><input type="checkbox" class="eventcheck" id = "35">E35: No-Limit Hold'em Eight Handed $5,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "36">E36: No-Limit 2-7 Draw Lowball $1,500</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "37">E37: Pot-Limit Omaha $1,500</input><br/></div>   
+<div class="event"><input type="checkbox" class="eventcheck" id = "38">E38: Seven Card Stud Hi-Low Split-8 or Better $10,000</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "39">E39: No-Limit Hold'em $3,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "40">E40: Heads Up No-Limit Hold'em $10,000</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "41">E41: Dealer's Choice Six-Handed $1,500</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "42">E42: Pot-Limit Omaha Six Handed $5,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "43">E43: Limit Hold'em $1,500</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "44">E44: No-Limit Hold'em $1,500</input><br/></div>   
+<div class="event"><input type="checkbox" class="eventcheck" id = "45">E45: No-Limit Hold'em $1,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "46">E46: The Poker Players Championship $50,000</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "47">E47: Ante Only No-Limit Hold'em $1,500</input><br/></div>   
+<div class="event"><input type="checkbox" class="eventcheck" id = "48">E48: Pot-Limit Omaha Hi-Low Split-8 or Better $1,500</input><br/></div>   
+<div class="event"><input type="checkbox" class="eventcheck" id = "49">E49: No-Limit Hold'em $5,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "50">E50: Eight Game Mix $1,500</input><br/></div>   
+<div class="event"><input type="checkbox" class="eventcheck" id = "51">E51: No-Limit Hold'em MONSTER STACK $1,000</input><br/></div>   
+<div class="event"><input type="checkbox" class="eventcheck" id = "52">E52: Limit Hold'em $10,000</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "53">E53: Ladies No-Limit Hold'em Championship $1,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "54">E54: Pot-Limit Omaha Hi-Low Split-8 or Better $3,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "55">E55: No-Limit Hold'em $1,500</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "56">E56: No-Limit Hold'em $1,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "57">E57: The Big One for One Drop $1,000,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "58">E58: No-Limit Hold'em Mixed Max $1,500 </input><br/></div>
+<div class="event"><input type="checkbox" class="eventcheck" id = "59">E59: Omaha Hi-Low Split-8 or Better $3,000</input><br/></div> 
+<div class="event"><input type="checkbox" class="eventcheck" id = "60">E60: No-Limit Hold'em $1,500</input><br/></div>   
+<div class="event"><input type="checkbox" class="eventcheck" id = "61">E61: Seven Card Stud $10,000</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "62">E62: The Little One for One Drop $1,111</input><br/></div>   
+<div class="event"><input type="checkbox" class="eventcheck" id = "63">E63: 10-Game Mix Six Handed $1,500 </input><br/></div>
+<div class="event"><input type="checkbox" class="eventcheck" id = "64">E64: Pot-Limit Omaha $10,000</input><br/></div>  
+<div class="event"><input type="checkbox" class="eventcheck" id = "65">E65: No-Limit Hold'em Main Event $10,000</input><br/></div>
+</div>
+
+</body>

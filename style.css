@@ -1,0 +1,27 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.event {
+  padding-top: 20px;
+}
+
+#footer {
+   position:fixed;
+   right:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   padding: 10px;
+   background:#555;
+   font-size: 12px;
+   text-align: right;
+}
