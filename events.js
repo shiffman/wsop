@@ -11,8 +11,8 @@ var wsop =
   {
     id:2,
     name:'Event #2: Mixed Max No-Limit Hold\'em $25,000  ',
-    entrants: 250,
-    playing: false,
+    entrants: 131,
+    playing: true,
     edge: 2.0
   },
   {
@@ -46,8 +46,8 @@ var wsop =
   {
     id:7,
     name:'Event #7: Seven Card Razz $1,500   ',
-    entrants: 400,
-    playing: false,
+    entrants: 300,
+    playing: true,
     edge: 2.0
   },
   {
@@ -75,7 +75,7 @@ var wsop =
     id:11,
     name:'Event #11: No-Limit Hold\'em Six Handed $1,500  ',
     entrants: 1000,
-    playing: true,
+    playing: false,
     edge: 2.0
   },
   {
@@ -109,7 +109,7 @@ var wsop =
   {
     id:16,
     name:'Event #16: Limit 2-7 Triple Draw Lowball $1,500  ',
-    entrants: 500,
+    entrants: 300,
     playing: true,
     edge: 2.0
   },
@@ -131,7 +131,7 @@ var wsop =
     id:19,
     name:'Event #19: No-Limit Hold\'em $1,500  ',
     entrants: 3000,
-    playing: true,
+    playing: false,
     edge: 2.0
   },
   {
@@ -145,7 +145,7 @@ var wsop =
     id:21,
     name:'Event #21: No-Limit Hold\'em $1,000 ',
     entrants: 3000,
-    playing: true,
+    playing: false,
     edge: 4.0
   },
   {
@@ -159,7 +159,7 @@ var wsop =
     id:23,
     name:'Event #23: Turbo No-Limit Hold\'em  $1,000 ',
     entrants: 1000,
-    playing: true,
+    playing: false,
     edge: 2.0
   },
   {
@@ -180,7 +180,7 @@ var wsop =
     id:26,
     name:'E26: No-Limit Hold\'em $1,500   ',
     entrants: 3000,
-    playing: true,
+    playing: false,
     edge: 2.0
   },
   {
@@ -242,14 +242,14 @@ var wsop =
   {
     id:35,
     name:'E35: No-Limit Hold\'em Eight Handed $5,000 ',
-    entrants: 1000,
+    entrants: 300,
     playing: true,
     edge: 2.0
   },
   {
     id:36,
     name:'E36: No-Limit 2-7 Draw Lowball $1,500  ',
-    entrants: 250,
+    entrants: 300,
     playing: true,
     edge: 2.0
   },
@@ -263,7 +263,7 @@ var wsop =
   {
     id:38,
     name:'E38: Seven Card Stud Hi-Low Split-8 or Better $10,000  ',
-    entrants: 150,
+    entrants: 200,
     playing: true,
     edge: 2.0
   },
@@ -277,7 +277,7 @@ var wsop =
   {
     id:40,
     name:'E40: Heads Up No-Limit Hold\'em $10,000  ',
-    entrants: 256,
+    entrants: 100,
     playing: true,
     edge: 2.0
   },
@@ -313,21 +313,21 @@ var wsop =
     id:45,
     name:'E45: No-Limit Hold\'em $1,000 ',
     entrants: 3000,
-    playing: true,
+    playing: false,
     edge: 2.0
   },
   {
     id:46,
     name:'E46: The Poker Players Championship $50,000  ',
-    entrants: 150,
+    entrants: 100,
     playing: true,
-    edge: 3.0
+    edge: 2.0
   },
   {
     id:47,
     name:'E47: Ante Only No-Limit Hold\'em $1,500   ',
     entrants: 500,
-    playing: true,
+    playing: false,
     edge: 2.0
   },
   {
@@ -347,7 +347,7 @@ var wsop =
   {
     id:50,
     name:'E50: Eight Game Mix $1,500   ',
-    entrants: 500,
+    entrants: 300,
     playing: true,
     edge: 2.0
   },
@@ -355,13 +355,13 @@ var wsop =
     id:51,
     name:'E51: No-Limit Hold\'em MONSTER STACK $1,000   ',
     entrants: 1000,
-    playing: true,
+    playing: false,
     edge: 2.0
   },
   {
     id:52,
     name:'E52: Limit Hold\'em $10,000  ',
-    entrants: 200,
+    entrants: 100,
     playing: true,
     edge: 2.0
   },
@@ -375,7 +375,7 @@ var wsop =
   {
     id:54,
     name:'E54: Pot-Limit Omaha Hi-Low Split-8 or Better $3,000 ',
-    entrants: 500,
+    entrants: 300,
     playing: true,
     edge: 2.0
   },
@@ -383,14 +383,14 @@ var wsop =
     id:55,
     name:'E55: No-Limit Hold\'em $1,500  ',
     entrants: 3000,
-    playing: true,
+    playing: false,
     edge: 2.0
   },
   {
     id:56,
     name:'E56: No-Limit Hold\'em $1,000 ',
     entrants: 3000,
-    playing: true,
+    playing: false,
     edge: 2.0
   },
   {
@@ -410,7 +410,7 @@ var wsop =
   {
     id:59,
     name:'E59: Omaha Hi-Low Split-8 or Better $3,000 ',
-    entrants: 250,
+    entrants: 500,
     playing: true,
     edge: 2.0
   },
@@ -418,13 +418,13 @@ var wsop =
     id:60,
     name:'E60: No-Limit Hold\'em $1,500   ',
     entrants: 3000,
-    playing: true,
+    playing: false,
     edge: 2.0
   },
   {
     id:61,
     name:'E61: Seven Card Stud $10,000  ',
-    entrants: 150,
+    entrants: 100,
     playing: true,
     edge: 2.0
   },
@@ -432,7 +432,7 @@ var wsop =
     id:62,
     name:'E62: The Little One for One Drop $1,111   ',
     entrants: 3000,
-    playing: true,
+    playing: false,
     edge: 2.0
   },
   {
@@ -445,7 +445,7 @@ var wsop =
   {
     id:64,
     name:'E64: Pot-Limit Omaha $10,000  ',
-    entrants: 250,
+    entrants: 300,
     playing: true,
     edge: 2.0
   },
@@ -456,4 +456,4 @@ var wsop =
     playing: true,
     edge: 5.0
   }
-]
+];

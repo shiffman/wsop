@@ -34,21 +34,27 @@ var recalculate = function() {
 
   var checkers = document.getElementsByClassName('eventcheck');
   var events = document.getElementsByClassName('event');
+
+  var totalEvents = 0;
   for (i = 0; i < events.length; i++) {
     if (checkers[i].checked) {
       var prob = winningProb(i);
       notwinning *= (1-prob);
       notwinning *= (1-prob);
       events[i].style.opacity = 1.0;
+      totalEvents++;
     } else {
       events[i].style.opacity = 0.2;
     }
   }
 
+
+
+
   var winning = 100*(1-notwinning);
 
   var showodds = document.getElementById('finalodds');
-  showodds.innerHTML = 'Odds of Negreanu or Ivey Winning a Bracelet: <div id="thisisit">' + winning.toFixed(2) + '%</div>';
+  showodds.innerHTML = 'Odds of Negreanu or Ivey Winning a Bracelet: <div id="thisisit">' + winning.toFixed(2) + '%</div> (Playing ' + totalEvents + ' events.)';
 
 };
 
@@ -64,16 +70,16 @@ var winningProb = function(i) {
   return prob/100;
 };
 
-window.onload = function() {
-  
+var loadData = function() {
+
   var eventsElem = document.getElementById('events');
   for (var i = 0; i < wsop.length; i++) {
-    console.log(wsop[i]);
+    //console.log(wsop[i]);
     var eventElem = document.createElement('div');
     eventElem.setAttribute('class','event');
 
     var eventCheck = document.createElement('input');
-    eventCheck.type = 'checkbox'
+    eventCheck.type = 'checkbox';
     eventCheck.setAttribute('class','eventcheck');
     eventCheck.setAttribute('id',wsop[i].id);
     eventCheck.checked = wsop[i].playing;
@@ -149,15 +155,10 @@ window.onload = function() {
     eventElem.appendChild(field);
     eventElem.appendChild(skill);
     eventElem.appendChild(odds);
-
-
-
   }
+};
 
-
- 
+window.onload = function() {
+  loadData();
   recalculate();
-
-
-
 };
