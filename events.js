@@ -12,56 +12,56 @@ var wsop =
     id:2,
     name:'Event #2: Mixed Max No-Limit Hold\'em $25,000  ',
     entrants: 250,
-    playing: true,
+    playing: false,
     edge: 2.0
   },
   {
     id:3,
     name:'Event #3: Pot-Limit Omaha $1,000 ',
     entrants: 500,
-    playing: true,
+    playing: false,
     edge: 2.0
   },
   {
     id:4,
     name:'Event #4: No-Limit Hold\'em $1,000 ',
     entrants: 3000,
-    playing: true,
+    playing: false,
     edge: 4.0
   },
   {
     id:5,
     name:'Event #5: Limit 2-7 Triple Draw Lowball $10,000  ',
     entrants: 100,
-    playing: true,
+    playing: false,
     edge: 2.0
   },
   {
     id:6,
     name:'Event #6: No-Limit Hold\'em Shootout $1,500  ',
     entrants: 500,
-    playing: true,
+    playing: false,
     edge: 2.0
   },
   {
     id:7,
     name:'Event #7: Seven Card Razz $1,500   ',
     entrants: 400,
-    playing: true,
+    playing: false,
     edge: 2.0
   },
   {
     id:8,
     name:'Event #8: Millionaire Maker No-Limit Hold\'em $1,500 ',
     entrants: 5000,
-    playing: true,
+    playing: false,
     edge: 4.0
   },
   {
     id:9,
     name:'Event #9: No-Limit Hold\'em $1,000 ',
     entrants: 3000,
-    playing: true,
+    playing: false,
     edge: 4.0
   },
   {
